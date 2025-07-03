@@ -1,7 +1,7 @@
 
 # 🌱 SuddAI - AgriWatch AI for South Sudan
 
-![SuddAI Screenshot](https://via.placeholder.com/800x400?text=SuddAI+Screenshot) *(Replace with actual screenshot)*
+![SuddAI Screenshot](./image/suddAi.png) *(Replace with actual screenshot)*
 
 An AI-powered agricultural monitoring system providing early warnings and intelligence for South Sudanese farmers and policymakers.
 
