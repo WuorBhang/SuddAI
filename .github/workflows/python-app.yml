@@ -1,0 +1,42 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Deploy SuddAI App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Set up environment variables
+      run: |
+        echo "NASA_API_KEY=${{ secrets.NASA_API_KEY }}" >> $GITHUB_ENV
+        echo "OPENWEATHER_API_KEY=${{ secrets.OPENWEATHER_API_KEY }}" >> $GITHUB_ENV
+        echo "STREAMLIT_DISABLE_EMAIL=1" >> $GITHUB_ENV
+
+    - name: Run Streamlit app (test)
+      run: |
+        streamlit run main.py --server.port 8080
+      env:
+        NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+        OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+        STREAMLIT_DISABLE_EMAIL: 1
