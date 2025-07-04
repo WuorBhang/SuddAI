@@ -38,7 +38,7 @@ SOUTH_SUDAN_COUNTIES = {
         "Pochalla": {"lat": 8.2833, "lon": 34.0667},
         "Twic East": {"lat": 7.3000, "lon": 32.0000},
         "Uror": {"lat": 7.8500, "lon": 32.4000},
-        "Nyirol": {"lat": 8.6600, "lon": 32.3100},
+        "Nyirol": {"lat": 8.660, "lon": 32.310},
         "Akobo": {"lat": 7.7833, "lon": 33.0000}
     },
     "Lakes": {
