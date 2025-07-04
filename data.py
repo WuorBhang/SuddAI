@@ -1,5 +1,5 @@
-
 # South Sudan counties data with coordinates
+# https://en.wikipedia.org/wiki/Counties_of_South_Sudan
 SOUTH_SUDAN_COUNTIES = {
     "Central Equatoria": {
         "Juba": {"lat": 4.8594, "lon": 31.5713},
@@ -38,7 +38,7 @@ SOUTH_SUDAN_COUNTIES = {
         "Pochalla": {"lat": 8.2833, "lon": 34.0667},
         "Twic East": {"lat": 7.3000, "lon": 32.0000},
         "Uror": {"lat": 7.8500, "lon": 32.4000},
-        "Nyirol": {"lat": 7.7500, "lon": 31.1000},
+        "Nyirol": {"lat": 8.6600, "lon": 32.3100},
         "Akobo": {"lat": 7.7833, "lon": 33.0000}
     },
     "Lakes": {
