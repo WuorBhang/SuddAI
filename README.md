@@ -99,7 +99,7 @@ suddai/
 1. Fork the project  
 2. Create your feature branch  
    ```bash
-   git checkout -b feature/AmazingFeature
+   git checkout -b Master/feature/AmazingFeature
    ```
 3. Commit your changes  
    ```bash
@@ -107,14 +107,14 @@ suddai/
    ```
 4. Push to the branch  
    ```bash
-   git push origin feature/AmazingFeature
+   git push origin Master/feature/AmazingFeature
    ```
 5. Open a Pull Request  
 
 ## 📜 License
 
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License.
 
 ## 📧 Contact
 
-Project Maintainer - Wuor Bhang
+Project Developer & Maintainer - Wuor Bhang
